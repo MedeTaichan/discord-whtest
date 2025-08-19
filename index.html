@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -12,495 +11,489 @@
             box-sizing: border-box;
         }
 
-```
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        min-height: 100vh;
-        padding: 20px;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
 
-    h1 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 30px;
-        font-size: 2.2em;
-        background: linear-gradient(45deg, #667eea, #764ba2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-    .form-group {
-        margin-bottom: 20px;
-    }
+        .form-group {
+            margin-bottom: 20px;
+        }
 
-    label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 600;
-        color: #555;
-    }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
 
-    input[type="text"], input[type="url"], textarea {
-        width: 100%;
-        padding: 12px 16px;
-        border: 2px solid #e1e5e9;
-        border-radius: 12px;
-        font-size: 16px;
-        transition: all 0.3s ease;
-        background: rgba(255, 255, 255, 0.9);
-    }
+        input[type="text"], input[type="url"], textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+        }
 
-    input[type="text"]:focus, input[type="url"]:focus, textarea:focus {
-        outline: none;
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        transform: translateY(-2px);
-    }
+        input[type="text"]:focus, input[type="url"]:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
 
-    textarea {
-        resize: vertical;
-        min-height: 100px;
-    }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
 
-    .image-section {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        padding: 20px;
-        border-radius: 16px;
-        margin: 20px 0;
-    }
+        .image-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
 
-    .image-section h3 {
-        color: #333;
-        margin-bottom: 15px;
-        text-align: center;
-    }
+        .image-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
 
-    .image-item {
-        background: white;
-        padding: 15px;
-        border-radius: 12px;
-        margin-bottom: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease;
-    }
+        .image-item {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
 
-    .image-item:hover {
-        transform: translateY(-2px);
-    }
+        .image-item:hover {
+            transform: translateY(-2px);
+        }
 
-    .image-item:last-child {
-        margin-bottom: 0;
-    }
+        .image-item:last-child {
+            margin-bottom: 0;
+        }
 
-    .image-item label {
-        color: #666;
-        font-size: 14px;
-        margin-bottom: 6px;
-    }
+        .image-item label {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
 
-    .mode-selector {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 10px;
-    }
+        .mode-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
 
-    .mode-btn {
-        flex: 1;
-        padding: 12px 20px;
-        border: 2px solid #e1e5e9;
-        border-radius: 12px;
-        background: white;
-        color: #666;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
+        .mode-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            background: white;
+            color: #666;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-    .mode-btn:hover {
-        border-color: #667eea;
-        transform: translateY(-2px);
-    }
+        .mode-btn:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
 
-    .mode-btn.active {
-        background: linear-gradient(45deg, #667eea, #764ba2);
-        color: white;
-        border-color: #667eea;
-    }
+        .mode-btn.active {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-color: #667eea;
+        }
 
-    small {
-        color: #666;
-        font-size: 12px;
-    }
-        background: linear-gradient(45deg, #667eea, #764ba2);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-size: 14px;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }
+        small {
+            color: #666;
+            font-size: 12px;
+        }
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
 
-    .remove-image-btn {
-        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-        padding: 8px 16px;
-        font-size: 12px;
-    }
+        .remove-image-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 8px 16px;
+            font-size: 12px;
+        }
 
-    .add-image-btn:hover, .remove-image-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+        .add-image-btn:hover, .remove-image-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
 
-    .send-btn {
-        width: 100%;
-        background: linear-gradient(45deg, #667eea, #764ba2);
-        color: white;
-        border: none;
-        padding: 16px 24px;
-        border-radius: 16px;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-top: 20px;
-    }
+        .send-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
 
-    .send-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
-    }
+        .send-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
 
-    .send-btn:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-        transform: none;
-    }
+        .send-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
 
-    .result {
-        margin-top: 20px;
-        padding: 15px;
-        border-radius: 12px;
-        font-weight: 600;
-    }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
 
-    .result.success {
-        background: linear-gradient(135deg, #00b09b, #96c93d);
-        color: white;
-    }
+        .result.success {
+            background: linear-gradient(135deg, #00b09b, #96c93d);
+            color: white;
+        }
 
-    .result.error {
-        background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-        color: white;
-    }
+        .result.error {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+        }
 
-    .loading {
-        display: none;
-        text-align: center;
-        margin-top: 20px;
-    }
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-    .spinner {
-        width: 40px;
-        height: 40px;
-        border: 4px solid #e1e5e9;
-        border-top: 4px solid #667eea;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto 10px;
-    }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e1e5e9;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
 
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-    .preview {
-        background: #2f3136;
-        color: #dcddde;
-        padding: 16px;
-        border-radius: 12px;
-        margin-top: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+        .preview {
+            background: #2f3136;
+            color: #dcddde;
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    .preview h4 {
-        color: #667eea;
-        margin-bottom: 12px;
-    }
+        .preview h4 {
+            color: #667eea;
+            margin-bottom: 12px;
+        }
 
-    .preview-message {
-        background: #36393f;
-        padding: 12px;
-        border-radius: 8px;
-        border-left: 4px solid #667eea;
-    }
+        .preview-message {
+            background: #36393f;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
 
-    .preview-username {
-        font-weight: 600;
-        color: #ffffff;
-        margin-bottom: 4px;
-    }
+        .preview-username {
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
 
-    .preview-content {
-        line-height: 1.4;
-    }
+        .preview-content {
+            line-height: 1.4;
+        }
 
-    .preview-images {
-        margin-top: 8px;
-    }
+        .preview-images {
+            margin-top: 8px;
+        }
 
-    .preview-image {
-        max-width: 100px;
-        max-height: 100px;
-        border-radius: 4px;
-        margin-right: 8px;
-        margin-bottom: 4px;
-    }
-</style>
-```
-
+        .preview-image {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 4px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>簡易的WebHook送信テスター</h1>
-
-```
-    <form id="webhookForm">
-        <div class="form-group">
-            <label for="webhookUrl">WebHook URL *</label>
-            <input type="url" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." required>
-        </div>
-
-        <div class="form-group">
-            <label>送信モード</label>
-            <div class="mode-selector">
-                <button type="button" class="mode-btn active" data-mode="new" onclick="switchMode('new')">
-                    📝 新規送信
-                </button>
-                <button type="button" class="mode-btn" data-mode="edit" onclick="switchMode('edit')">
-                    ✏️ メッセージ編集
-                </button>
+        
+        <form id="webhookForm">
+            <div class="form-group">
+                <label for="webhookUrl">WebHook URL *</label>
+                <input type="url" id="webhookUrl" placeholder="https://discord.com/api/webhooks/..." required>
             </div>
-        </div>
 
-        <div class="form-group" id="messageIdGroup" style="display: none;">
-            <label for="messageId">編集するメッセージID *</label>
-            <input type="text" id="messageId" placeholder="メッセージIDを入力してください">
-            <small style="color: #666; font-size: 12px; display: block; margin-top: 4px;">
-                💡 メッセージIDは、Discordでメッセージを右クリック → 「IDをコピー」で取得できます
-            </small>
-        </div>
-
-        <div class="form-group">
-            <label for="username">表示名（任意）</label>
-            <input type="text" id="username" placeholder="Bot名">
-        </div>
-
-        <div class="form-group">
-            <label for="avatarUrl">アバター画像URL（任意）</label>
-            <input type="url" id="avatarUrl" placeholder="https://example.com/avatar.png">
-        </div>
-
-        <div class="form-group">
-            <label for="content">メッセージ内容</label>
-            <textarea id="content" placeholder="送信するメッセージを入力してください..."></textarea>
-        </div>
-
-        <div class="image-section">
-            <h3>📷 添付画像</h3>
-            <div id="imageContainer">
-                <div class="image-item">
-                    <label>画像URL</label>
-                    <input type="url" class="image-url" placeholder="https://example.com/image.png">
+            <div class="form-group">
+                <label>送信モード</label>
+                <div class="mode-selector">
+                    <button type="button" class="mode-btn active" data-mode="new" onclick="switchMode('new')">
+                        📝 新規送信
+                    </button>
+                    <button type="button" class="mode-btn" data-mode="edit" onclick="switchMode('edit')">
+                        ✏️ メッセージ編集
+                    </button>
                 </div>
             </div>
-            <button type="button" class="add-image-btn" onclick="addImageField()">+ 画像を追加</button>
-        </div>
 
-        <div class="preview" id="preview">
-            <h4>📋 プレビュー</h4>
-            <div class="preview-message">
-                <div class="preview-username" id="previewUsername">WebHook Bot</div>
-                <div class="preview-content" id="previewContent">メッセージがここに表示されます</div>
-                <div class="preview-images" id="previewImages"></div>
+            <div class="form-group" id="messageIdGroup" style="display: none;">
+                <label for="messageId">編集するメッセージID *</label>
+                <input type="text" id="messageId" placeholder="メッセージIDを入力してください">
+                <small style="color: #666; font-size: 12px; display: block; margin-top: 4px;">
+                    💡 メッセージIDは、Discordでメッセージを右クリック → 「IDをコピー」で取得できます
+                </small>
             </div>
+
+            <div class="form-group">
+                <label for="username">表示名（任意）</label>
+                <input type="text" id="username" placeholder="Bot名">
+            </div>
+
+            <div class="form-group">
+                <label for="avatarUrl">アバター画像URL（任意）</label>
+                <input type="url" id="avatarUrl" placeholder="https://example.com/avatar.png">
+            </div>
+
+            <div class="form-group">
+                <label for="content">メッセージ内容</label>
+                <textarea id="content" placeholder="送信するメッセージを入力してください..."></textarea>
+            </div>
+
+            <div class="image-section">
+                <h3>📷 添付画像</h3>
+                <div id="imageContainer">
+                    <div class="image-item">
+                        <label>画像URL</label>
+                        <input type="url" class="image-url" placeholder="https://example.com/image.png">
+                    </div>
+                </div>
+                <button type="button" class="add-image-btn" onclick="addImageField()">+ 画像を追加</button>
+            </div>
+
+            <div class="preview" id="preview">
+                <h4>📋 プレビュー</h4>
+                <div class="preview-message">
+                    <div class="preview-username" id="previewUsername">WebHook Bot</div>
+                    <div class="preview-content" id="previewContent">メッセージがここに表示されます</div>
+                    <div class="preview-images" id="previewImages"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="send-btn" id="sendBtn">🚀 WebHook送信</button>
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>送信中...</p>
         </div>
 
-        <button type="submit" class="send-btn" id="sendBtn">🚀 WebHook送信</button>
-    </form>
-
-    <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <p>送信中...</p>
+        <div id="result"></div>
     </div>
 
-    <div id="result"></div>
-</div>
+    <script>
+        let imageCount = 1;
+        let currentMode = 'new';
 
-<script>
-    let imageCount = 1;
-    let currentMode = 'new';
-
-    function switchMode(mode) {
-        currentMode = mode;
-        const buttons = document.querySelectorAll('.mode-btn');
-        const messageIdGroup = document.getElementById('messageIdGroup');
-        const sendBtn = document.getElementById('sendBtn');
-        
-        buttons.forEach(btn => btn.classList.remove('active'));
-        document.querySelector(`[data-mode="${mode}"]`).classList.add('active');
-        
-        if (mode === 'edit') {
-            messageIdGroup.style.display = 'block';
-            sendBtn.innerHTML = '✏️ メッセージを編集';
-            document.getElementById('messageId').required = true;
-        } else {
-            messageIdGroup.style.display = 'none';
-            sendBtn.innerHTML = '🚀 WebHook送信';
-            document.getElementById('messageId').required = false;
-        }
-    }
-
-    function addImageField() {
-        imageCount++;
-        const container = document.getElementById('imageContainer');
-        const imageItem = document.createElement('div');
-        imageItem.className = 'image-item';
-        imageItem.innerHTML = `
-            <label>画像URL</label>
-            <input type="url" class="image-url" placeholder="https://example.com/image.png">
-            <button type="button" class="remove-image-btn" onclick="removeImageField(this)">削除</button>
-        `;
-        container.appendChild(imageItem);
-        updatePreview();
-    }
-
-    function removeImageField(button) {
-        button.parentElement.remove();
-        updatePreview();
-    }
-
-    function updatePreview() {
-        const username = document.getElementById('username').value || 'WebHook Bot';
-        const content = document.getElementById('content').value || 'メッセージがここに表示されます';
-        const imageUrls = Array.from(document.querySelectorAll('.image-url'))
-            .map(input => input.value)
-            .filter(url => url.trim());
-
-        document.getElementById('previewUsername').textContent = username;
-        document.getElementById('previewContent').textContent = content;
-        
-        const previewImages = document.getElementById('previewImages');
-        previewImages.innerHTML = '';
-        imageUrls.forEach(url => {
-            const img = document.createElement('img');
-            img.src = url;
-            img.className = 'preview-image';
-            img.onerror = () => img.style.display = 'none';
-            previewImages.appendChild(img);
-        });
-    }
-
-    // リアルタイムプレビュー更新
-    document.addEventListener('input', updatePreview);
-
-    document.getElementById('webhookForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const webhookUrl = document.getElementById('webhookUrl').value;
-        const username = document.getElementById('username').value;
-        const avatarUrl = document.getElementById('avatarUrl').value;
-        const content = document.getElementById('content').value;
-        const messageId = document.getElementById('messageId').value;
-        
-        const imageUrls = Array.from(document.querySelectorAll('.image-url'))
-            .map(input => input.value)
-            .filter(url => url.trim());
-
-        // 編集モードの場合のバリデーション
-        if (currentMode === 'edit' && !messageId.trim()) {
-            document.getElementById('result').innerHTML = '<div class="result error">❌ 編集モードではメッセージIDが必要です</div>';
-            return;
-        }
-
-        // ローディング表示
-        document.getElementById('loading').style.display = 'block';
-        document.getElementById('result').innerHTML = '';
-        document.querySelector('.send-btn').disabled = true;
-
-        try {
-            const payload = {
-                content: content || undefined,
-                username: username || undefined,
-                avatar_url: avatarUrl || undefined
-            };
-
-            // 画像がある場合は embeds に追加
-            if (imageUrls.length > 0) {
-                payload.embeds = imageUrls.map(url => ({ image: { url } }));
-            }
-
-            // URLの構築（編集の場合はメッセージIDを追加）
-            let url = webhookUrl;
-            let method = 'POST';
+        function switchMode(mode) {
+            currentMode = mode;
+            const buttons = document.querySelectorAll('.mode-btn');
+            const messageIdGroup = document.getElementById('messageIdGroup');
+            const sendBtn = document.getElementById('sendBtn');
             
-            if (currentMode === 'edit') {
-                url += `/messages/${messageId}`;
-                method = 'PATCH';
-            }
-
-            const response = await fetch(url, {
-                method: method,
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(payload)
-            });
-
-            const resultDiv = document.getElementById('result');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[data-mode="${mode}"]`).classList.add('active');
             
-            if (response.ok) {
-                const actionText = currentMode === 'edit' ? '編集' : '送信';
-                const emoji = currentMode === 'edit' ? '✏️' : '✅';
-                resultDiv.innerHTML = `<div class="result success">${emoji} WebHookメッセージの${actionText}が完了しました！</div>`;
+            if (mode === 'edit') {
+                messageIdGroup.style.display = 'block';
+                sendBtn.innerHTML = '✏️ メッセージを編集';
+                document.getElementById('messageId').required = true;
             } else {
-                const errorText = await response.text();
-                const actionText = currentMode === 'edit' ? '編集' : '送信';
-                let errorMessage = `❌ ${actionText}に失敗しました: ${response.status} ${response.statusText}`;
-                
-                if (response.status === 404 && currentMode === 'edit') {
-                    errorMessage += '<br>💡 指定されたメッセージIDが見つかりません。IDが正しいか確認してください。';
-                }
-                
-                resultDiv.innerHTML = `<div class="result error">${errorMessage}<br>詳細: ${errorText}</div>`;
+                messageIdGroup.style.display = 'none';
+                sendBtn.innerHTML = '🚀 WebHook送信';
+                document.getElementById('messageId').required = false;
             }
-        } catch (error) {
-            const actionText = currentMode === 'edit' ? '編集' : '送信';
-            document.getElementById('result').innerHTML = `<div class="result error">❌ ${actionText}中にエラーが発生しました: ${error.message}</div>`;
-        } finally {
-            document.getElementById('loading').style.display = 'none';
-            document.querySelector('.send-btn').disabled = false;
         }
-    });
 
-    // 初期プレビュー更新
-    updatePreview();
-</script>
-```
+        function addImageField() {
+            imageCount++;
+            const container = document.getElementById('imageContainer');
+            const imageItem = document.createElement('div');
+            imageItem.className = 'image-item';
+            imageItem.innerHTML = `
+                <label>画像URL</label>
+                <input type="url" class="image-url" placeholder="https://example.com/image.png">
+                <button type="button" class="remove-image-btn" onclick="removeImageField(this)">削除</button>
+            `;
+            container.appendChild(imageItem);
+            updatePreview();
+        }
 
+        function removeImageField(button) {
+            button.parentElement.remove();
+            updatePreview();
+        }
+
+        function updatePreview() {
+            const username = document.getElementById('username').value || 'WebHook Bot';
+            const content = document.getElementById('content').value || 'メッセージがここに表示されます';
+            const imageUrls = Array.from(document.querySelectorAll('.image-url'))
+                .map(input => input.value)
+                .filter(url => url.trim());
+
+            document.getElementById('previewUsername').textContent = username;
+            document.getElementById('previewContent').textContent = content;
+            
+            const previewImages = document.getElementById('previewImages');
+            previewImages.innerHTML = '';
+            imageUrls.forEach(url => {
+                const img = document.createElement('img');
+                img.src = url;
+                img.className = 'preview-image';
+                img.onerror = () => img.style.display = 'none';
+                previewImages.appendChild(img);
+            });
+        }
+
+        // リアルタイムプレビュー更新
+        document.addEventListener('input', updatePreview);
+
+        document.getElementById('webhookForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const webhookUrl = document.getElementById('webhookUrl').value;
+            const username = document.getElementById('username').value;
+            const avatarUrl = document.getElementById('avatarUrl').value;
+            const content = document.getElementById('content').value;
+            const messageId = document.getElementById('messageId').value;
+            
+            const imageUrls = Array.from(document.querySelectorAll('.image-url'))
+                .map(input => input.value)
+                .filter(url => url.trim());
+
+            // 編集モードの場合のバリデーション
+            if (currentMode === 'edit' && !messageId.trim()) {
+                document.getElementById('result').innerHTML = '<div class="result error">❌ 編集モードではメッセージIDが必要です</div>';
+                return;
+            }
+
+            // ローディング表示
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('result').innerHTML = '';
+            document.querySelector('.send-btn').disabled = true;
+
+            try {
+                const payload = {
+                    content: content || undefined,
+                    username: username || undefined,
+                    avatar_url: avatarUrl || undefined
+                };
+
+                // 画像がある場合は embeds に追加
+                if (imageUrls.length > 0) {
+                    payload.embeds = imageUrls.map(url => ({ image: { url } }));
+                }
+
+                // URLの構築（編集の場合はメッセージIDを追加）
+                let url = webhookUrl;
+                let method = 'POST';
+                
+                if (currentMode === 'edit') {
+                    url += `/messages/${messageId}`;
+                    method = 'PATCH';
+                }
+
+                const response = await fetch(url, {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const resultDiv = document.getElementById('result');
+                
+                if (response.ok) {
+                    const actionText = currentMode === 'edit' ? '編集' : '送信';
+                    const emoji = currentMode === 'edit' ? '✏️' : '✅';
+                    resultDiv.innerHTML = `<div class="result success">${emoji} WebHookメッセージの${actionText}が完了しました！</div>`;
+                } else {
+                    const errorText = await response.text();
+                    const actionText = currentMode === 'edit' ? '編集' : '送信';
+                    let errorMessage = `❌ ${actionText}に失敗しました: ${response.status} ${response.statusText}`;
+                    
+                    if (response.status === 404 && currentMode === 'edit') {
+                        errorMessage += '<br>💡 指定されたメッセージIDが見つかりません。IDが正しいか確認してください。';
+                    }
+                    
+                    resultDiv.innerHTML = `<div class="result error">${errorMessage}<br>詳細: ${errorText}</div>`;
+                }
+            } catch (error) {
+                const actionText = currentMode === 'edit' ? '編集' : '送信';
+                document.getElementById('result').innerHTML = `<div class="result error">❌ ${actionText}中にエラーが発生しました: ${error.message}</div>`;
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.querySelector('.send-btn').disabled = false;
+            }
+        });
+
+        // 初期プレビュー更新
+        updatePreview();
+    </script>
 </body>
 </html>
